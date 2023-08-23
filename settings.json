@@ -1,8 +1,8 @@
 {
-  "source_directory": "E:/Songs",
-  "extraction_path": "E:/ExtractedSongs",
-  "log_location": "E:\\Projects\\RiffRipper\\logs\\RiffRipper.log",
+  "source_directory": "Path/to/source/folder",
+  "extraction_path": "Path/to/extraction/folder",
+  "log_location": "Path/to/log/file",
   "delete_after_extraction": false,
-  "extractor_type": "7z",
-  "7z_path": "C:/Program Files/7-Zip/7z.exe"
+  "extractor_type": "Choose between '7z' or 'Python'",
+  "7z_path": "Path to 7-Zip executable (if using '7z' as extractor_type)"
 }
