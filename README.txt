@@ -6,6 +6,7 @@ RiffRipper - Automatic Archive Extraction Tool
 Version: 1.0
 Author: NplusM
 Last Updated: August 23, 2023
+(Download the .exe from https://github.com/NplusM420/RiffRipper/releases/tag/v1.0alpha for easier install)
 -----------------------------------------------------------------------------------------------------------------------------
 Introduction:
 RiffRipper is a Python-based utility that automates the extraction of compressed music files. It provides a graphical user interface to select source and extraction folders and offers various options for customizing the extraction process.
