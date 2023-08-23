@@ -1,0 +1,8 @@
+{
+  "source_directory": "E:/Songs",
+  "extraction_path": "E:/ExtractedSongs",
+  "log_location": "E:\\Projects\\RiffRipper\\logs\\RiffRipper.log",
+  "delete_after_extraction": false,
+  "extractor_type": "7z",
+  "7z_path": "C:/Program Files/7-Zip/7z.exe"
+}

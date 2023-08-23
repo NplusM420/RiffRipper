@@ -1,0 +1,4 @@
+PyQt5
+tqdm
+tk
+pyinstaller  # Optional, based on whether you wish to create standalone executables.
