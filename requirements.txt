@@ -1,7 +1,4 @@
 PyQt5
 tqdm
-tk
-pyinstaller
-tkinter==8.6
-patool==1.12
-pyunpack==0.2.2
+patool
+pyunpack
