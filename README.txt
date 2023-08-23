@@ -6,55 +6,99 @@ RiffRipper - Automatic Archive Extraction Tool
 Version: 1.0
 Author: NplusM
 Last Updated: August 23, 2023
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Introduction:
-RiffRipper is a Python script designed to streamline the extraction process for archives (ZIP & RAR files) in a given directory. It uses both Python's built-in zipfile library and the 7-Zip software to handle various archive formats. The tool also comes with features like multithreading for improved extraction speed and an option to delete the original compressed files after successful extraction.
+RiffRipper is a Python-based utility that automates the extraction of compressed music files. It provides a graphical user interface to select source and extraction folders and offers various options for customizing the extraction process.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Features:
-Automatic Extraction:
-Extracts all archives in a specified directory to a target directory.
 
-Multithreading:
-Uses multiple threads for faster extraction, reducing the total extraction time. By default, it uses 4 threads. This number can be adjusted for optimal performance.
+Directory-Based Extraction: Easily extract all the compressed files from a specific directory.
 
-Error Logging:
-Logs any errors encountered during the extraction process for easy troubleshooting.
+Various File Types: Supports extraction of .zip, .rar, .7z, etc., via different extraction methods.
 
-Optional Deletion:
-Provides an option to delete the original archives after successful extraction.
+Logging: Records all actions performed during extraction, including success and errors.
 
-Progress Display:
-Utilizes a progress bar to show the ongoing status of the extraction.
+Delete After Extraction: Option to delete the compressed files after successful extraction.
 
-Setup & Requirements:
-Python:
-Ensure that Python (Version 3.6 or above) is installed on your system.
+Multithreading: Speed up the extraction process by enabling multithreading.
 
-7-Zip:
-Install 7-Zip from its official website. Note the path to the 7z.exe executable, as this will be needed for the settings.
+Choose Extractor: Choose between built-in Python or 7-zip methods for extraction.
 
-settings.json:
-This file contains configuration settings for the script. Before running the script, make sure to update settings.json with appropriate values.
+Duplication Check: Checks for existing files by the same name before extracting to prevent duplicate extractions.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Installation:
+To install RiffRipper, follow the steps below.
 
-source_directory: The directory containing the ZIP & RAR files you wish to extract.
-log_location: The path where you want the log file to be saved.
-delete_after_extraction: A boolean value (true or false) indicating whether to delete the original archives after extraction.
-extractor_type: The type of extractor to use ("python" for zipfile or "7z" for 7-Zip).
-7z_path: The path to the 7z executable. Update this if your 7z installation is in a different directory.
-Usage:
-Update the settings.json file with the appropriate paths and preferences.
-Navigate to the directory containing the RiffRipper.py script using a terminal or command prompt.
-Run the script using the command python RiffRipper.py.
-When prompted, provide the path where you'd like to store your extracted songs. The script will create this directory if it doesn't already exist.
-The script will then automatically extract all archives from the source directory to the provided directory, displaying a progress bar.
-After extraction, if delete_after_extraction is set to true, the script will ask for confirmation to delete the original archives. Confirm with 'y' to delete or 'n' to retain them.
-Support & Troubleshooting:
-If the extraction process encounters errors, it will log details about these errors in the specified log file. Check the log file for details on which archives caused problems.
+Prerequisites:
+Python 3.7 or higher installed on your machine
+pip installed (Python package installer)
+Steps
+Clone the Repository:
 
-Ensure that the source directory, 7-Zip path, and log locations are correctly specified in the settings.json file.
+bash
+Copy code
+git clone https://github.com/NplusM420/RiffRipper.git
 
-If you encounter issues related to multithreading or resource usage, you can adjust the MAX_THREADS variable in the RiffRipper.py script to increase or decrease the number of threads used.
+Navigate to Project Directory:
 
+bash
+Copy code
+cd RiffRipper
+Create a Virtual Environment (Optional but Recommended):
+
+bash
+Copy code
+python -m venv venv
+Activate the Virtual Environment:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Windows:
+
+bash
+Copy code
+.\venv\Scripts\activate
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MacOS/Linux:
+bash
+Copy code
+source venv/bin/activate
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Install Dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Usage
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Activate Virtual Environment:
+
+If you created a virtual environment during installation, make sure to activate it before running the application.
+
+Run the Application:
+
+bash
+Copy code
+python main.py
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Configure Settings:
+
+Source Directory: The folder containing your compressed music files.
+
+Extraction Path: The folder where the extracted files will be saved.
+
+Delete After Extraction: Toggle this to delete the compressed file after successful extraction.
+
+Extractor Type: Choose the type of extraction method ("Python" or "7-zip").
+
+Multithreading: Enable or disable multithreading for faster extraction.
+
+Start the Extraction:
+
+Click on the Extract button to start the extraction process. The progress will be logged and displayed.
 =========================================================================
 Thank you for using the RiffRipper Tool! For any issues or feedback, please refer to the original script developer.
 =========================================================================
+
+**NOTE: This tool has only been tested on Windows, Mac/Linux users should be able to use this but may face unknown issues.
